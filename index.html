@@ -4,13 +4,32 @@
 <head>
   <meta charset="utf-8"> <!-- UTF-8 is standard for all languages -->
   <title>Helen's Personal Site</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!--allows us to do External CSS, must remove the / -->
+
+  <!-- Internal CSS
+<style>
+body {
+  background-color: #faf0e6;
+}
+hr {
+  border: dotted white;
+  border-width: 0 0 6px;
+  width: 8%;
+}
+</style>
+-->
 </head>
 
 <body>
-  <table cellspacing="20"> <!-- cellspacing spaces out the data in the table by 20 pixels-->
+  <table cellspacing="20">
+    <!-- cellspacing spaces out the data in the table by 20 pixels
+          Use a table to move things beside eachother
+    -->
     <tr>
       <td> <img width=213 height=250 src="etb (2).jpg" alt="Helen Profile Picture" /></td>
-      <td> <!-- src specifies the source of the image (web or file), alt is the text that shows up in case an image cant be produced -->
+      <td>
+        <!-- src specifies the source of the image (web or file), alt is the text that shows up in case an image cant be produced -->
         <h1>Helen Shelton</h1>
         <p><em>Aspiring <strong>Software Engineer</strong> and <strong> <a href=https://www.eng.mcmaster.ca/ece> McMaster University Engineering Undergrad </a> </strong> </em></p>
         <!-- <a> tag </a> and href is hyperlink reference to another page on the web-->
@@ -52,7 +71,7 @@
   <!--  its good to separate the header, body and footer of the table so you can format
 them separately, or else you can put them in the same section
  -->
-  <table cellspacing = "10">
+  <table cellspacing="10">
     <thead>
       <tr>
         <th>Dates</th>
@@ -75,10 +94,10 @@ them separately, or else you can put them in the same section
     </tbody>
   </table>
 
-<hr />
+  <hr />
 
-<h3>Skills</h3>
-  <table cellspacing = "10">
+  <h3>Skills</h3>
+  <table cellspacing="10">
     <tr>
       <td>Python</td>
       <td>&#11088;&#11088;&#11088;&#11088;</td>
@@ -93,10 +112,26 @@ them separately, or else you can put them in the same section
     </tr>
   </table>
 
-<hr />
+  <hr />
 
-  <a href="hobbies.html"> Hobbies</a>
-  <a href="ContactMe.html"> Contact Me</a>
+  <table cellspacing="5">
+    <tr class="enlarge">
+      <td> <img class="mushroom circular enlarge" width=50 height=50 src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/279/mushroom_1f344.png" alt="mushroom-emoji">
+      </td>
+      <td>
+        <p><a href="hobbies.html"> Hobbies</a></p>
+      </td>
+    </tr>
+    <tr class="enlarge">
+      <td>
+        <img id="phone" class="circular enlarge" width=50 height=50 src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/samsung/265/telephone_260e.png" alt="phone-emoji">
+      </td>
+      <td>
+        <p><a href="ContactMe.html"> Contact Me</a></p>
+      </td>
+    </tr>
+  </table>
+
 
 </body>
 

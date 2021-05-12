@@ -1,0 +1,65 @@
+/* remember to put properties in alphabetical order */
+/* https://colorhunt.co/palette/282026    <<< colour pallete */
+
+/********* TAG SELECTORS ********/
+body {
+  background-color: #faf0e6;
+}
+
+hr {
+  border: dotted white;
+  border-width: 0 0 6px;
+  width: 8%;
+}
+
+h1{
+  color: #da7f8f;
+}
+h3{
+  color: #da7f8f;
+}
+
+
+
+/********* CLASS SELECTORS ********/
+/* this allows us to only apply changes to certain classes, even if you have multiple of the same type of selector */
+
+.mushroom{
+  background-color: white;
+}
+.circular{
+  border-radius: 100%;
+} /* an example of adding 2 classes to the same HTML element */
+
+.enlarge:hover{ /*using psuedo-class on CLASS */
+  transform: scale(1.5);
+}
+
+/********* ID SELECTORS ********/
+
+#phone {
+  background-color: white;
+}
+#phone:hover{ /*using psuedo-class on ID, this is needed because the img:hover{} is less specific than an ID */
+  background-color: #da7f8f;
+}
+
+/* ClASS and ID selectors will always override the TAG selectors because they are more specific */
+/* DIFFERENCE BETWEEN CLASS AND ID:
+  An ID can only be applied to one element (must be unique) and every element can have only 1 ID.
+  A CLASS can be applied to multiple elements that have something in common,
+        ex. functionality, color, etc.*/
+/* You can use the Chrome developer tool to see the heirarchy of implementation:
+    inspect element > elements > styles*/
+
+
+/********* PSUEDO CLASSES SELECTORS ********/
+/* can get a CLASS to change its state by a mouse hover over the element */
+
+img:hover{
+  background-color: #da7f8f;
+}
+/* an example of a pseudo class attached to a selector,
+Their heirarchy of order is before CLASS but after ID, ID will overwrite */
+/* psuedo-classes are usually written right under their selector, class, ID, etc.,
+  but for demonstration purposes I have included it here */
